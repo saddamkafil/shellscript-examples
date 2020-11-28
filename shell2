@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in {1..10}
+do
+    rm -rf sadam_$i
+done
