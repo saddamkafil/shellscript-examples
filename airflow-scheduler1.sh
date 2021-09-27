@@ -6,10 +6,10 @@ dt=`date +"%Y-%m-%d"`
 Log=$dt"_airflow-scheduler.log"
 
 
-value=`curl -s -X GET http://api.cdp.bridg.com/health -H "Accept: application/json" | sed -n '6p' | cut -c 20-28`
+value=`curl -s -X GET http://airflow.com/health -H "Accept: application/json" | sed -n '6p' | cut -c 20-28`
 value2=unhealthy
 value1=$value
-value3=`curl -s -X GET http://api.cdp.bridg.com/health -H "Accept: application/json" | sed -n '2p-7p' `
+value3=`curl -s -X GET http://airflow.com/health -H "Accept: application/json" | sed -n '2p-7p' `
 mystring=$value1
 mystring2=$value2
 
