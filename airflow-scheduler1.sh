@@ -1,4 +1,3 @@
-```
 #!/bin/bash
 while true; do
 time=`date +"%Y-%m-%d-%T"`
@@ -43,4 +42,4 @@ echo "$time moniter sleep ended for 5 sec" >> $time_$Log
 done
 
 #find /path/*_airflow-scheduler.log -mtime +5 -exec rm {} \;
-```
+
